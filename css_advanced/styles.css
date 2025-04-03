@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+:root{
+    --primary-color: #C271FF;
+    --secondary-color:#000000;
+    --other-color:#071629;
+    --radial-color:#29303D;
+    --font-color:#ffffff;
+}
+/*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}*/
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-weight: 500;
+    font-family: "Source Sans 3", serif;
+    width: 100%;
+    overflow-x: hidden;
+
+}
+
+.body{
+    background-image: url(image/Object.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    height: 1093px;
+   
+}
+header{
+    width: 80%;
+    margin: 12px;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a{
+    color: var(--font-color);
+    text-decoration: none;
+    
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 150px;
+    margin-top: 24px;
+}
+.logo > ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    gap: 1.65em;
+    font-size: 1em;
+    text-decoration: none;
+    font-family: "Source Code Pro", serif;
+    align-items: end;
+}
+.getschooled{
+    text-align: center;
+    font-family: "Source Sans 3",sans-serif;
+    font-size: 120px;
+    color: var(--font-color);
+    margin-bottom: 0;
+}
+
+.sub-banner{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 1.56rem;
+    font-size: 16px;
+    color: #ffffff;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: bold;
+}
+button{
+    border-radius: 22px;
+    height: 44px;
+    width: 162px;
+    display: block;
+    cursor: pointer;
+    margin: 2rem auto;
+    border: none;
+    color: var(--font-color);
+    background-color: var(--primary-color);
+    font-weight: bold;
+    font-family: "Source code Pro", serif;
+}
+.learn{
+    text-align: center;
+    font-family: "Source Code Pro", serif;
+    font-weight: lighter;
+    font-size: 32px;
+    color: var(--font-color);
+    margin-top: 130px;
+}
+
+.learn-from-pro{
+    display: flex;
+    color: #ffffff;
+    justify-content: center;
+    text-align: center;
+    justify-content: space-evenly;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 100px;
+    margin-bottom: 0px;
+}
+#img-two{
+    border-radius: 100%;
+}
+.testimony{
+    background-color: #C271FF;
+    display: flex;
+    padding-inline: 10rem;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    /*width: fit-content;*/
+    height: 392px;
+    color: var(--font-color);
+
+}
+.tutorials-container{
+    display: flex;
+    /*justify-content: space-evenly*/;
+    margin: 50px;
+    /*width: 1228px;
+    height: 450px;*/
+    gap: 1rem;
+    justify-content: center;
+
+}
+ 
+.container-one{
+    /*border: 1px solid;*/
+    width: 255px;
+    height: 335px;
+    font-weight: 100;
+    font-family: "Source Sans 3", serif;
+}
+.container-two{
+    width: 255px;
+    height: 335px;
+    font-weight: 100;
+    font-family: "Source Sans 3", serif;
+}
+.container-three{
+    width: 255px;
+    height: 335px;
+    font-weight: 100;
+    font-family: "Source Sans 3", serif;
+}
+.container-four{
+    width: 255px;
+    height: 335px;
+    font-weight: 100;
+    font-family: "Source Sans 3", serif;
+}
+.name{
+    display: flex;
+    align-items: center;
+    color: var(--primary-color);
+    gap: 1em;
+    font-family: "Source Sans 3", serif;
+}
+ .tutorials-heading > span{
+    color: var(--primary-color);
+}
+.tutorials-heading{
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 1.9em;
+}
+
+.tutorials{
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.icons{
+    display: flex;
+    color: #C271FF;
+   font-size: 300;
+}
+.main-icons{
+    display: flex;
+    align-items: center;
+}
+.main-icons > p{
+    margin: 0;
+    margin-left: 70px;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+.membership  h2 {
+    color: var(--font-color);
+    font-family: "Source Sans 3", serif;
+ 
+    
+}
+.membership-content{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+    
+}
+
+.membership-content div p{
+    display: flex;
+    flex-direction: column;
+    font-family: "Source Sans 3", serif;
+    /*align-content: center;*/
+    width: 257px;
+    /*height: 153px;*/
+    margin-bottom: 20px;
+    /*color: var(--font-color);*/
+    margin-inline: auto;
+
+}
+/*.membership-content  h3{
+    text-align: center;
+}*/
+.membership-content > span{
+    align-items: center;
+}
+.membership{
+    background-color: var(--other-color);
+    height: 402px;
+    padding-top: 50px;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+    font-family: "Source Sans 3", serif;
+    p{
+        color: #ffffff;
+        font-weight: 200;
+        /*text-align: center;*/
+    }
+
+}
+h2{
+    text-align: center;
+}
+ 
+.membership-content h3{
+    color: var(--font-color);
+    
+}
+
+.faq-content{
+    display: flex;
+    width: 60%;
+   align-items: center;
+   margin-inline: auto;
+   font-family: "Source Sans 3", serif;
+}
+
+.faq-content > div{
+    font-weight: 200;
+    padding: 1.89em;
+}
+
+.footer{
+    background-color: var(--other-color);
+    padding: 2rem;
+    height: 249px;
+    color: var(--font-color);
+    size: 120px;
+    margin-inline: auto;
+    justify-content: center;
+
+}
+
+.footer-logo{
+    display: flex;
+    justify-content: space-between;
+    width:80%;
+    align-items: center;
+    padding: 100px;
+}
+.footer > p:last-of-type{
+    text-align: center;
+    color: var(--font-color);
+    font-weight: 200;
+    position: relative;
+    bottom: 0;
+}
+.socials{
+    
+    font-size: 20px;
+    font-weight: bolder;
+    width: 130px;
+    height: 30px;
+}
+.play{
+    position: absolute;
+    transform: translate(90px, 50px);
+    cursor: pointer;
+}
