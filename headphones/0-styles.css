@@ -1,0 +1,213 @@
+:root{
+    --font-color: #ffffff;
+    --main-color: #ff6565;
+    --sec-color: #d8d8d8; 
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro";
+  line-height: 1.2;
+}
+
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.main-header{
+    background: url(images/headphones_hero_1.jpg);
+    height: fit-content;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    gap:14rem;
+    font-weight: 400;
+    font-weight: bold;
+    padding-block: 2em;
+    margin-right: 0;
+}
+
+.logo ul{
+    display: flex;
+    gap: 1.90em;
+    font-family: "Source Sans Pro";
+    color: var(--font-color);
+    li a{
+        color: var(--font-color);
+    }
+}
+
+.logo > img{
+    width: 165px;
+    height: 33px;
+
+}
+.main-part{
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   padding-block-end: 6em;
+   align-items: center;
+   width: 637px;
+   height: 313px;
+   color: var(--font-color);
+   /*width: 70%;*/
+   margin: auto;
+   height: calc(100vh - 5rem);
+    h1{
+        font-weight: 800;
+        font-size: 32px;
+    }
+  
+    button{
+        background-color: var(--main-color);
+        width: 162px;
+        height: 44px;
+        border-radius: 20px;
+        border: none;
+        color: var(--font-color);
+        font-weight: bold;
+        font-family: 'Source Sans Pro';
+        cursor: pointer;
+        margin-top: 1em;
+            &:hover{
+                opacity: 0.9;
+
+            }
+          
+        
+    }
+   p:first-of-type{
+    font-weight: bold;
+   }
+    p:last-child{
+        text-align: center;
+        margin-top: 24px;
+        font-family: 'Source Sans Pro';
+        font-weight:lighter;
+        position: relative;
+        top: 30px;
+    }
+    
+}
+input[type=checkbox]{
+    display: none;
+}
+label{
+   display: none;
+}
+@media screen and (max-width: 600px){
+    li:nth-last-child(-n+3){
+        font-weight: bold;
+    }
+   .logo{
+    display: flex;
+    justify-content: space-around ;
+    gap: 9px;
+    font-size: 12px;
+    padding-block: 2.5rem;
+}
+   .main-part{
+    /*text-align: center;
+    height: calc(100vh - 1rem);*/
+    width: 70%;
+   }
+   .main-part > h1{
+    white-space: nowrap;
+    font-size: x-large;
+   }
+   .main-header{
+    background-size: cover;
+    background-position: center;
+   }
+   
+   p:last-of-type{
+   margin: 0;
+   }
+}
+
+@media screen and (max-width: 480px){
+   /* li:nth-last-child(-n+3){
+        display: none;
+    } */
+     .drop-down{
+        display: flex;
+        flex-direction: column;
+        font-weight: bold;
+        position: fixed;
+        top: 25%;
+        left: 50%;
+        height: 100vh;
+        transform: translate(-50%, -50%) translateY(-200%);
+        transition: transform 0.3s ease;
+        z-index: 10; 
+    }
+    .drop-down li{
+        text-align: center;
+    }
+    .main-header{
+        background-size: cover;
+       }
+
+    .logo > img{
+      margin-top: 0;
+      margin: auto;
+}
+.logo{
+    gap: 0;
+}
+    .main-part{
+        text-align: center;
+        height: calc(120vh - 1rem);
+    }
+    .main-part > h1{
+        white-space: nowrap;
+        margin-bottom: 5px
+    }
+   .hamburger span{
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: var(--font-color);
+    margin: 6px 0;
+    transform: transform 0.3s ease, opacity 0.3s ease;
+   }
+   .hamburger span:nth-last-child(2){
+    width: 15px;
+    height: 3px;
+   }
+   
+   #menu-toggle:checked ~ .hamburger span:nth-child(1){
+    transform: translateY(10px) rotate(45deg);
+   }
+   #menu-toggle:checked ~ .hamburger span:nth-child(2){
+    opacity: 0;
+
+   }
+   #menu-toggle:checked ~ .hamburger span:nth-child(3){
+    transform: translateY(-10px) rotate(-45deg);
+   }
+   #menu-toggle:checked ~ .drop-down{
+    transform: translateY(0)
+   }
+   input[type=checkbox]{
+    display: none;
+   }
+   label{
+    margin-left: 12px;
+    display: block;
+   }
+}
+
+
+
+  

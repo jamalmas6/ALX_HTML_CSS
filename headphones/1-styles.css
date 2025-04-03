@@ -1,0 +1,119 @@
+:root{
+    --font-color: #ffffff;
+    --main-color: #ff6565;
+    --sec-color: #d8d8d8;
+    --other-color: #071629;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro";
+  line-height: 1.2;
+}
+
+.main-section{
+    text-align: center;
+    color: var(--other-color);
+    margin: auto;
+    /* margin-block-start: 129px; */
+}
+
+.sec-container{
+    width: 637px;
+    height: 184px;
+    margin: auto;
+    align-content: center;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 150px;
+}
+
+.part-icons{
+    display: flex;
+    justify-content: center;
+    width: 992px;
+    height: 193px;
+    gap: 90px;
+    margin: auto;
+
+}
+
+.part-icons img{
+    width: 67.59px;
+    height: 76.8px;
+    margin: auto;
+    margin-bottom: 25px;
+
+}
+
+.wave > img{
+    width: 94.2px;
+    height: 65.36px;
+}
+
+.video > img{
+    width:61.43px;
+    height: 61.44px;
+}
+
+.music > img{
+    width: 51.66px;
+    height: 57.27px;
+}
+.hear > img{
+    width:61.43px;
+    height: 61.44px;
+
+}
+
+.wave > img:hover{
+  transform: scale(-0.5, 1);
+}
+
+.video > img:hover{
+  transform: scale(-0.5, 1);
+}
+
+.music > img:hover{
+  transform: scale(-0.5, 1);
+}
+
+.hear > img:hover{
+  transform: scale(-0.5, 1);
+}
+
+@media screen and (max-width: 600px) {
+    .part-icons {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); 
+      gap: 20px; 
+      justify-items: center; 
+      width: 80%;
+    }
+    .part-icons img {
+      width: 80; 
+      height: auto;
+    }
+    .sec-container{
+        width: 80%;
+        height: 184px;
+        margin: auto;
+        align-content: center;
+    }
+  }
+  /* andriod devices */
+  
+  @media screen and (max-width: 480px) {
+    .part-icons {
+      display: grid;
+      grid-template-columns: 1fr; 
+      gap: 20px; 
+      justify-items: center;
+    }
+    .part-icons img {
+      width: 70px; 
+      height: auto;
+    }
+  }
+  

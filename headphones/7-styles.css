@@ -1,0 +1,535 @@
+:root{
+    --font-color: #ffffff;
+    --main-color: #ff6565;
+    --sec-color: #d8d8d8; 
+    --other-color: #071629;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro";
+  line-height: 1.2;
+}
+
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.main-header{
+    background: url(images/headphones_hero_1.jpg);
+    height: fit-content;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    gap:14rem;
+    font-weight: 400;
+    font-weight: bold;
+    padding-block: 2em;
+    margin-right: 0;
+}
+
+.logo ul{
+    display: flex;
+    gap: 1.90em;
+    font-family: "Source Sans Pro";
+    color: var(--font-color);
+    li a{
+        color: var(--font-color);
+    }
+}
+
+.logo > img{
+    width: 165px;
+    height: 33px;
+
+}
+.main-part{
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   padding-block-end: 6em;
+   align-items: center;
+   width: 637px;
+   height: 313px;
+   color: var(--font-color);
+   /*width: 70%;*/
+   margin: auto;
+   height: calc(100vh - 5rem);
+    h1{
+        font-weight: 800;
+        font-size: 32px;
+    }
+  
+    button{
+        background-color: var(--main-color);
+        width: 162px;
+        height: 44px;
+        border-radius: 20px;
+        border: none;
+        color: var(--font-color);
+        font-weight: bold;
+        font-family: 'Source Sans Pro';
+        cursor: pointer;
+        margin-top: 1em;
+            &:hover{
+                opacity: 0.9;
+
+            }
+          
+        
+    }
+   p:first-of-type{
+    font-weight: bold;
+   }
+    p:last-child{
+        text-align: center;
+        margin-top: 24px;
+        font-family: 'Source Sans Pro';
+        font-weight:lighter;
+        position: relative;
+        top: 30px;
+    }
+    
+}
+input[type=checkbox]{
+    display: none;
+}
+label{
+   display: none;
+}
+@media screen and (max-width: 600px){
+    li:nth-last-child(-n+3){
+        font-weight: bold;
+    }
+   .logo{
+    display: flex;
+    justify-content: space-around ;
+    gap: 9px;
+    font-size: 12px;
+    padding-block: 2.5rem;
+}
+   .main-part{
+    /*text-align: center;
+    height: calc(100vh - 1rem);*/
+    width: 70%;
+   }
+   .main-part > h1{
+    white-space: nowrap;
+    font-size: x-large;
+   }
+   .main-header{
+    background-size: cover;
+    background-position: center;
+   }
+   
+   p:last-of-type{
+   margin: 0;
+   }
+}
+
+@media screen and (max-width: 480px){
+   /* li:nth-last-child(-n+3){
+        display: none;
+    } */
+     .drop-down{
+        display: flex;
+        flex-direction: column;
+        font-weight: bold;
+        position: fixed;
+        top: 25%;
+        left: 50%;
+        height: 100vh;
+        transform: translate(-50%, -50%) translateY(-200%);
+        transition: transform 0.3s ease;
+        z-index: 10; 
+    }
+    .drop-down li{
+        text-align: center;
+    }
+    .main-header{
+        background-size: cover;
+       }
+
+    .logo > img{
+      margin-top: 0;
+      margin: auto;
+}
+.logo{
+    gap: 0;
+}
+    .main-part{
+        text-align: center;
+        height: calc(120vh - 1rem);
+    }
+    .main-part > h1{
+        white-space: nowrap;
+        margin-bottom: 5px
+    }
+   .hamburger span{
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: var(--font-color);
+    margin: 6px 0;
+    transform: transform 0.3s ease, opacity 0.3s ease;
+   }
+   .hamburger span:nth-last-child(2){
+    width: 15px;
+    height: 3px;
+   }
+   
+   #menu-toggle:checked ~ .hamburger span:nth-child(1){
+    transform: translateY(10px) rotate(45deg);
+   }
+   #menu-toggle:checked ~ .hamburger span:nth-child(2){
+    opacity: 0;
+
+   }
+   #menu-toggle:checked ~ .hamburger span:nth-child(3){
+    transform: translateY(-10px) rotate(-45deg);
+   }
+   #menu-toggle:checked ~ .drop-down{
+    transform: translateY(0)
+   }
+   input[type=checkbox]{
+    display: none;
+   }
+   label{
+    margin-left: 12px;
+    display: block;
+   }
+}
+
+/* what we do section */
+.main-section{
+    text-align: center;
+    color: var(--other-color);
+    margin: auto;
+    /* margin-block-start: 129px; */
+}
+
+.sec-container{
+    width: 637px;
+    height: 184px;
+    margin: auto;
+    align-content: center;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 150px;
+}
+
+.part-icons{
+    display: flex;
+    justify-content: center;
+    width: 992px;
+    height: 193px;
+    gap: 90px;
+    margin: auto;
+
+}
+
+.part-icons img{
+    width: 67.59px;
+    height: 76.8px;
+    margin: auto;
+    margin-bottom: 25px;
+
+}
+
+.wave > img{
+    width: 94.2px;
+    height: 65.36px;
+}
+
+.video > img{
+    width:61.43px;
+    height: 61.44px;
+}
+
+.music > img{
+    width: 51.66px;
+    height: 57.27px;
+}
+.hear > img{
+    width:61.43px;
+    height: 61.44px;
+
+}
+
+.wave > img:hover{
+  transform: scale(-0.5, 1);
+}
+
+.video > img:hover{
+  transform: scale(-0.5, 1);
+}
+
+.music > img:hover{
+  transform: scale(-0.5, 1);
+}
+
+.hear > img:hover{
+  transform: scale(-0.5, 1);
+}
+
+@media screen and (max-width: 600px) {
+    .part-icons {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); 
+      gap: 20px; 
+      justify-items: center; 
+      width: 80%;
+    }
+    .part-icons img {
+      width: 80; 
+      height: auto;
+    }
+    .sec-container{
+        width: 80%;
+        height: 184px;
+        margin: auto;
+        align-content: center;
+    }
+  }
+  /* andriod devices */
+  
+  @media screen and (max-width: 480px) {
+    .part-icons {
+      display: grid;
+      grid-template-columns: 1fr; 
+      gap: 20px; 
+      justify-items: center;
+    }
+    .part-icons img {
+      width: 70px; 
+      height: auto;
+    }
+  }
+  
+  /* our result section  */
+  .pentagon{
+    width: 190px; 
+    height: 190px;
+    background-color:var(--main-color);
+    clip-path: polygon(50% 0%, 100% 38%, 81% 100%, 19% 100%, 0% 38%);
+    margin: 50px auto;
+}
+
+.pentagon-container{
+    position: relative;
+    width: 190px;
+    height: 190px;
+    margin: 50px auto;
+}
+
+.sign{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-30%, -30%);
+    color: var(--font-color);
+    font-size: 20px;
+}
+
+.sign > h2{
+    padding-block-start: 60%;
+}
+ .sign p{
+    font-size: small;
+    align-content: center;
+    white-space: nowrap;
+    align-items: center;
+    transform: translate(-19px, 10px);
+ }
+
+ .pentagon-holder{
+   display: flex;
+   justify-content: space-around;
+   align-content: center;
+   width: 70%;
+   margin: auto;
+ }
+
+ .our-section{
+     /* width: 1400px; */
+     height: fit-content;
+    background: url(images/headphones_hero_2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-block-start: 10em;
+    padding-bottom: 4em;
+ }
+ .our-text{
+    /* padding-block-start: 5em; */
+    margin-top: 300px;
+    text-align: center;
+    width: 637px;
+    height: 104px;
+    color: var(--font-color);
+    margin: auto;
+ }
+ .pentagon-container:hover{
+    transform: scale(0.7);
+   
+ }
+
+
+ /* mobile view */
+
+ @media screen and (max-width: 600px){
+    .our-section{
+        height: fit-content;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .pentagon-holder{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+
+    .our-text{
+        width: 80%;
+    }
+
+ }
+
+ @media screen and (max-width: 480px){
+    .pentagon-holder{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+
+ }
+
+ /* form section */
+ .form-container{
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: var(--font-color);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; */
+    text-align: center;
+    margin: auto;
+    margin-top: 150px;
+}
+
+.form-container input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.form-container input:focus{
+    border-bottom: 1px solid #555;
+}
+
+.form-container button{
+    /* width: 100px; */
+    padding: 10px;
+    margin-top: 20px;
+    background-color: var(--main-color);
+    color: var(--font-color);
+    font-size: 16px;
+    border-radius: 24px;
+    width: 162px;
+    height: 44px;
+    cursor: pointer;
+    border: 0px solid transparent;
+    box-shadow: 0 4px 8px rgba(56, 45, 45, 0.1);
+    padding-block-start: 12px;
+}
+
+button:hover{
+    opacity: 0.9;
+}
+
+/* footer section */
+.footer{
+    background-color: var(--other-color);
+    padding: 2rem;
+    height: 249px;
+    color: var(--font-color);
+    size: 120px;
+    margin-inline: auto;
+    justify-content: center;
+
+}
+
+.footer-logo{
+    display: flex;
+    justify-content: space-between;
+    width:80%;
+    align-items: center;
+    padding: 50px;
+    margin: auto;
+}
+.footer > p:last-of-type{
+    text-align: center;
+    color: var(--font-color);
+    font-weight: 200;
+    position: relative;
+    bottom: 0;
+}
+.footer-logo img{
+    width: 161px;
+    height: 32px;
+}
+.socials{
+    
+    font-size: 20px;
+    font-weight: bolder;
+    /* width: 130px;
+    height: 30px; */
+}
+
+/* mobile view for 600px and 480px */
+
+@media screen and (max-width: 600px){
+    .socials{
+        display: flex;
+        gap: 12px;
+    }
+
+    .footer-logo{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .footer-logo{
+        display: grid;
+        justify-content: center;
+        padding: 30px;
+    }
+
+    .socials{
+        display: flex;
+        gap: 12px;
+        margin: auto;
+    }
+
+    .footer-logo > img{
+        margin-bottom: 24px;
+        margin: auto;
+    } 
+}

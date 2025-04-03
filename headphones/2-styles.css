@@ -1,0 +1,110 @@
+:root{
+    --font-color: #ffffff;
+    --main-color: #ff6565;
+    --sec-color: #d8d8d8; 
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro";
+  line-height: 1.2;
+}
+.pentagon{
+    width: 190px; 
+    height: 190px;
+    background-color:var(--main-color);
+    clip-path: polygon(50% 0%, 100% 38%, 81% 100%, 19% 100%, 0% 38%);
+    margin: 50px auto;
+}
+
+.pentagon-container{
+    position: relative;
+    width: 190px;
+    height: 190px;
+    margin: 50px auto;
+}
+
+.sign{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-30%, -30%);
+    color: var(--font-color);
+    font-size: 20px;
+}
+
+.sign > h2{
+    padding-block-start: 60%;
+}
+ .sign p{
+    font-size: small;
+    align-content: center;
+    white-space: nowrap;
+    align-items: center;
+    transform: translate(-19px, 10px);
+ }
+
+ .pentagon-holder{
+   display: flex;
+   justify-content: space-around;
+   align-content: center;
+   width: 70%;
+   margin: auto;
+ }
+
+ .our-section{
+     /* width: 1400px; */
+     height: fit-content;
+    background: url(images/headphones_hero_2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-block-start: 10em;
+    padding-bottom: 4em;
+ }
+ .our-text{
+    /* padding-block-start: 5em; */
+    margin-top: 300px;
+    text-align: center;
+    width: 637px;
+    height: 104px;
+    color: var(--font-color);
+    margin: auto;
+ }
+ .pentagon-container:hover{
+    transform: scale(0.7);
+   
+ }
+
+
+ /* mobile view */
+
+ @media screen and (max-width: 600px){
+    .our-section{
+        height: fit-content;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .pentagon-holder{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+
+    .our-text{
+        width: 80%;
+    }
+
+ }
+
+ @media screen and (max-width: 480px){
+    .pentagon-holder{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+
+ }
